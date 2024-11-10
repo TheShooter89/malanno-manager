@@ -4,37 +4,47 @@
 Edit movies: {{ item.id }}
 {% endblock title %}
 
+{% block head %}
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+{% endblock head %}
+
+{% block body_attrs %}
+class="prose p-10"
+{% endblock body_attrs %}
+
 {% block content %}
-<h1>Edit movies: {{ item.id }}</h1>
-<div class="mb-10">
-    <form hx-post="/movies/{{ item.id }}" hx-ext="submitjson" hx-target="#success-message">
-    <div class="mb-5">
-    <div>
-        <label>name</label>
-        <br />
-        <input id="name" name="name" type="text" value="{{item.name}}"></input>
-        </div>
-    <div>
-        <label>star</label>
-        <br />
-        <input id="star" name="star" type="number" required value="{{item.star}}"></input>
-        </div>
-    <div>
-        <label>active</label>
-        <br />
-        <input id="active" name="active" type="checkbox" value="true" {% if item.active %}checked{%endif %}></input>
-        </div>
-    <div>
-        <div class="mt-5">
-            <button class=" text-xs py-3 px-6 rounded-lg bg-gray-900 text-white" type="submit">Submit</button>
-            <button class="text-xs py-3 px-6 rounded-lg bg-red-600 text-white"
-                        onclick="confirmDelete(event)">Delete</button>
-        </div>
-    </div>
-</form>
-<div id="success-message" class="mt-4"></div>
-<br />
-<a href="/movies">Back to movies</a>
+<div id="content">
+  <h1>Edit movies: {{ item.id }}</h1>
+  <div class="mb-10">
+      <form hx-patch="/movies/{{ item.id }}" hx-ext="submitjson" hx-target="#success-message">
+      <div class="mb-5">
+      <div>
+          <label>name</label>
+          <br />
+          <input id="name" name="name" type="text" value="{{item.name}}"></input>
+          </div>
+      <div>
+          <label>star</label>
+          <br />
+          <input id="star" name="star" type="number" required value="{{item.star}}"></input>
+          </div>
+      <div>
+          <label>active</label>
+          <br />
+          <input id="active" name="active" type="checkbox" value="true" {% if item.active %}checked{%endif %}></input>
+          </div>
+      <div>
+          <div class="mt-5">
+              <button class=" text-xs py-3 px-6 rounded-lg bg-gray-900 text-white" type="submit">Submit</button>
+              <button class="text-xs py-3 px-6 rounded-lg bg-red-600 text-white"
+                          onclick="confirmDelete(event)">Delete</button>
+          </div>
+      </div>
+  </form>
+  <div id="success-message" class="mt-4"></div>
+  <br />
+  <a href="/movies">Back to movies</a>
+  </div>
 </div>
 {% endblock content %}
 
