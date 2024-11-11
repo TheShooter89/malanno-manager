@@ -10,3 +10,27 @@
 .view-homepage-container {
   background-color: white;
 }
+
+.view-homepage-cell {
+  /**/
+  flex: 1 0 auto;
+}
+
+.view-homepage-title-container {
+  /**/
+  flex: 1 0 auto;
+}
+
+.view-homepage-title {
+  color: rgb(var(--app-link-rgb));
+}
+
+.view-homepage-bg-credits {
+  /**/
+  flex-shrink: 0;
+}
+
+.view-homepage-bg-credits-tag {
+  /**/
+  background-color: rgba(243, 244, 246, 0.55);
+}
