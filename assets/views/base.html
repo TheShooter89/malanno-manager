@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +13,9 @@
       rel="stylesheet"
       href="static/css/base.css"
     >
-    {% block head %}
+    {% include "theme.html" ignore missing %}
 
+    {% block head %}
     {% endblock head %}
   </head>
 

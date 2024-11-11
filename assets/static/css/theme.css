@@ -1,0 +1,76 @@
+:root {
+  /* Colors and Lightness values */
+  /* --bulma-scheme-h: 221; */
+  /* --bulma-scheme-s: 14%; */
+  /* --bulma-light-l: 90%; */
+  /* --bulma-light-invert-l: 20%; */
+  /* --bulma-dark-l: 20%; */
+  /* --bulma-dark-invert-l: 90%; */
+  /* --bulma-soft-l: 90%; */
+  /* --bulma-bold-l: 20%; */
+  /* --bulma-soft-invert-l: 20%; */
+  /* --bulma-bold-invert-l: 90%; */
+  /* etc. */
+
+  /* Color Palettes */
+  --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-primary-rgb: 29, 51, 84;
+  --bulma-primary-h: 216deg;
+  --bulma-primary-s: 49%;
+  --bulma-primary-l: 22%;
+
+  --bulma-link: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-link-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-link-rgb: 240, 6, 153;
+  --bulma-link-h: 322deg;
+  --bulma-link-s: 95%;
+  --bulma-link-l: 48%;
+
+  --bulma-info: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-info-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-info-rgb: 70, 117, 153;
+  --bulma-info-h: 206deg;
+  --bulma-info-s: 34%;
+  --bulma-info-l: 44%;
+
+  --bulma-success: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-success-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-success-rgb: 1, 142, 66;
+  --bulma-success-h: 148deg;
+  --bulma-success-s: 99%;
+  --bulma-success-l: 28%;
+
+  /* --bulma-warning: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1); */
+  /* --bulma-warning-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1); */
+  /* --bulma-warning-rgb: 0, 209, 178; */
+  /* --bulma-warning-h: 171deg; */
+  /* --bulma-warning-s: 100%; */
+  /* --bulma-warning-l: 41%; */
+
+  --bulma-danger: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-danger-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+  --bulma-danger-rgb: 191, 26, 47;
+  --bulma-danger-h: 352deg;
+  --bulma-danger-s: 76%;
+  --bulma-danger-l: 43%;
+
+  /* --bulma-primary-00-l: 1%; */
+  /* --bulma-primary-05-l: 6%; */
+  /* --bulma-primary-10-l: 11%; */
+  /* --bulma-primary-15-l: 16%; */
+  /* --bulma-primary-20-l: 21%; */
+  /* etc. */
+
+  /* Typography */
+  --bulma-family-primary: Crimson Text, Rubik, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --bulma-family-secondary: Crimson Text, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --bulma-family-sans-serif: Rubik, Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, monospace;
+  --bulma-family-monospace: IBM Plex Mono, Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, monospace;
+  --bulma-family-code: IBM Plex Mono, Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, monospace;
+  /* --bulma-size-small: 0.75rem; */
+  /* --bulma-size-normal: 1rem; */
+  /* --bulma-size-medium: 1.25rem; */
+  /* --bulma-size-large: 1.5rem; */
+  /* etc. */
+}

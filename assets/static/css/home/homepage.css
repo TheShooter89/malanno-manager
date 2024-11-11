@@ -3,6 +3,10 @@
   background-image: url('../../img/background.jpg');
 }
 
+.view-homepage-hero-body {
+  /* background-color: violet; */
+}
+
 .view-homepage-container {
   background-color: white;
 }
