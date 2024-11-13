@@ -39,10 +39,10 @@
 
   --app-warning: hsla(var(--app-warning-h), var(--app-warning-s), var(--app-warning-l), 1);
   --app-warning-base: hsla(var(--app-warning-h), var(--app-warning-s), var(--app-warning-l), 1);
-  --app-warning-rgb: 0, 209, 178;
-  --app-warning-h: 171deg;
-  --app-warning-s: 100%;
-  --app-warning-l: 41%;
+  --app-warning-rgb: 247, 208, 2;
+  --app-warning-h: 50deg;
+  --app-warning-s: 98%;
+  --app-warning-l: 49%;
 
   --app-danger: hsla(var(--app-danger-h), var(--app-danger-s), var(--app-danger-l), 1);
   --app-danger-base: hsla(var(--app-danger-h), var(--app-danger-s), var(--app-danger-l), 1);
