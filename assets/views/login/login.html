@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}
+Malanno Manager Homepage
+{% endblock title %}
+
+{% block head %}
+<link
+  rel="stylesheet"
+  href="static/css/login/login.css"
+>
+{% endblock head %}
+
+{% block content %}
+<main class="hero view-login-hero is-fullheight">
+  <div class="fixed-grid has-7-cols">
+    <div class="grid base-min-fullheight">
+
+      <section class="cell view-login-cell is-col-span-4">
+        <div class="container base-min-fullheight is-fluid is-flex is-flex-direction-column">
+          <section class="cell view-login-title-container is-col-span-3">
+            <h1 class="title app-text-oblique-shadow view-login-title is-1 ml-4 mt-6">MALANNO MANAGER</h1>
+            <h3 class="title app-text-oblique-shadow-small view-login-subtitle is-6 ml-4 has-text-weight-semibold">#make<span class="view-login-subtitle-malanno">MALANNO</span>greatagain</h3>
+          </section>
+
+          <footer class="subtitle view-login-bg-credits">
+            <span class="tag view-login-bg-credits-tag mb-4">
+              Magnificent image from  <a href="https://unsplash.com/it/@marekpiwnicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marek Piwnicki</a>  on  <a href="https://unsplash.com/it/foto/vista-di-una-catena-montuosa-innevata-da-un-aereo-e53aiQHOBvM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </span>
+          </footer>
+        </div>
+      </section>
+
+      <section class="cell view-login-cell is-col-span-3">
+        <section class="box base-min-fullheight is-radiusless">
+          <article class="view-login-article">
+            <h1 class="title">Hello Nonno!</h1>
+            <p class="subtitle mt-5 mb-6">To enter, provide your credentials, insert your email and password in the form below.</p>
+
+            <form class="pt5">
+              <div class="field">
+                <label class="label">EMAIL:</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="youremail@example.com" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">PASSWORD:</label>
+                <div class="control">
+                  <input class="input" type="password" />
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link" type="submit"><span class="is-bold">LOGIN</span></button>
+                </div>
+
+                <div class="control">
+                  <button class="button is-warning" type="submit">FORGOT PASSWORD</button>
+                </div>
+              </div>
+            </form>
+          </article>
+
+        </section>
+      </section>
+
+    </div>
+  </div>
+</main>
+{% endblock content %}
+
+{% block js %}
+{% endblock js %}

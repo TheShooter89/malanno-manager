@@ -1,0 +1,53 @@
+.view-login-hero {
+  /* background-color: violet; */
+  background-image: url('../../img/background.jpg');
+}
+
+.view-login-hero-body {
+  /* background-color: violet; */
+}
+
+.view-login-container {
+  background-color: white;
+}
+
+.view-login-cell {
+  /**/
+  flex: 1 0 auto;
+}
+
+.view-login-title-container {
+  /**/
+  flex: 1 0 auto;
+}
+
+.view-login-title {
+  color: rgb(var(--app-link-rgb));
+}
+
+.view-login-subtitle {
+  color: rgb(var(--app-link-rgb));
+  letter-spacing: 0.1rem;
+}
+
+.view-login-subtitle-malanno {
+  color: rgb(var(--app-warning-rgb));
+  letter-spacing: 0.2rem;
+}
+
+.view-login-bg-credits {
+  /**/
+  flex-shrink: 0;
+}
+
+.view-login-bg-credits-tag {
+  /**/
+  background-color: rgba(243, 244, 246, 0.55);
+}
+
+.view-login-article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  padding-top: 16vh;
+}
