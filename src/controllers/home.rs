@@ -14,10 +14,6 @@ pub async fn homepage(
     views::home::homepage(&v)
 }
 
-async fn hello(State(_ctx): State<AppContext>) -> Result<Response> {
-    format::text("fuck off")
-}
-
 pub fn routes() -> Routes {
     // Routes::new().prefix("home/").add("/hello", get(hello))
     Routes::new().prefix("/").add("/", get(homepage))
