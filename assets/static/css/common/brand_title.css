@@ -1,0 +1,17 @@
+:root {
+  /* global settings for this component*/
+}
+
+.common-brand-title {
+  color: rgb(var(--app-link-rgb));
+}
+
+.common-brand-subtitle {
+  color: rgb(var(--app-link-rgb));
+  letter-spacing: 0.1rem;
+}
+
+.common-brand-subtitle-malanno {
+  color: rgb(var(--app-warning-rgb));
+  letter-spacing: 0.2rem;
+}
