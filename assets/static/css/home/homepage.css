@@ -25,6 +25,16 @@
   color: rgb(var(--app-link-rgb));
 }
 
+.view-homepage-subtitle {
+  color: rgb(var(--app-link-rgb));
+  letter-spacing: 0.1rem;
+}
+
+.view-homepage-subtitle-malanno {
+  color: rgb(var(--app-warning-rgb));
+  letter-spacing: 0.2rem;
+}
+
 .view-homepage-bg-credits {
   /**/
   flex-shrink: 0;
