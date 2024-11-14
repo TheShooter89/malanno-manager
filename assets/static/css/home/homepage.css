@@ -61,11 +61,6 @@
   flex-shrink: 0;
 }
 
-.view-homepage-bg-credits-tag {
-  /**/
-  background-color: rgba(243, 244, 246, 0.55);
-}
-
 .view-homepage-article {
   margin-left: auto;
   margin-right: auto;
