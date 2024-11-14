@@ -35,6 +35,27 @@
   letter-spacing: 0.2rem;
 }
 
+.view-homepage-enter-button-container {
+  /**/
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-homepage-enter-button {
+  /**/
+  box-shadow:
+    var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-20) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-30) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-50) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-55) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-60) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-65) rgba(var(--app-primary-rgb), 1),
+    var(--app-oblique-shadow-70) rgba(var(--app-primary-rgb), 1);
+}
+
 .view-homepage-bg-credits {
   /**/
   flex-shrink: 0;

@@ -9,6 +9,10 @@ Malanno Manager Homepage
   rel="stylesheet"
   href="static/css/home/homepage.css"
 >
+<link
+  rel="stylesheet"
+  href="static/css/home/description.css"
+>
 {% endblock head %}
 
 {% block content %}
@@ -18,10 +22,14 @@ Malanno Manager Homepage
 
       <section class="cell view-homepage-cell is-col-span-4">
         <div class="container base-min-fullheight is-fluid is-flex is-flex-direction-column">
-          <section class="cell view-homepage-title-container is-col-span-3">
+          <section class="view-homepage-title-container">
             <!-- brand_title - common brand title text used app-wide -->
             {% include "common/brand_title.html" ignore missing %}
             <!-- END brand_title component -->
+          </section>
+
+          <section class="view-homepage-enter-button-container">
+            <a class="button view-homepage-enter-button is-warning is-large has-text-weight-bold" href="login">ENTER</a>
           </section>
 
           <footer class="subtitle view-homepage-bg-credits">
@@ -34,37 +42,9 @@ Malanno Manager Homepage
 
       <section class="cell view-homepage-cell is-col-span-3">
         <section class="box base-min-fullheight is-radiusless">
-          <article class="view-homepage-article">
-            <h1 class="title">Hello Nonno!</h1>
-            <p class="subtitle mt-5 mb-6">To enter, provide your credentials, insert your email and password in the form below.</p>
-
-            <form class="pt5">
-              <div class="field">
-                <label class="label">EMAIL:</label>
-                <div class="control">
-                  <input class="input" type="email" placeholder="youremail@example.com" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">PASSWORD:</label>
-                <div class="control">
-                  <input class="input" type="password" />
-                </div>
-              </div>
-
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link" type="submit"><span class="is-bold">LOGIN</span></button>
-                </div>
-
-                <div class="control">
-                  <button class="button is-warning" type="submit">FORGOT PASSWORD</button>
-                </div>
-              </div>
-            </form>
-          </article>
-
+          <!-- enter_credentials - form to provide login credentials -->
+          {% include "home/description.html" ignore missing %}
+          <!-- END enter_credentials component -->
         </section>
       </section>
 
