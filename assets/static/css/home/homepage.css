@@ -44,6 +44,7 @@
 
 .view-homepage-enter-button {
   /**/
+  color: var(--app-primary);
   box-shadow:
     var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
     var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
