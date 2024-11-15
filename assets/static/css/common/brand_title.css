@@ -3,11 +3,11 @@
 }
 
 .common-brand-title {
-  color: rgb(var(--app-link-rgb));
+  color: rgb(var(--app-primary-rgb));
 }
 
 .common-brand-subtitle {
-  color: rgb(var(--app-link-rgb));
+  color: rgb(var(--app-primary-rgb));
   letter-spacing: 0.1rem;
 }
 

@@ -3,35 +3,40 @@
   /* Color Palettes */
   --app-primary: hsla(var(--app-primary-h), var(--app-primary-s), var(--app-primary-l), 1);
   --app-primary-base: hsla(var(--app-primary-h), var(--app-primary-s), var(--app-primary-l), 1);
-  --app-primary-rgb: 29, 51, 84;
-  --app-primary-h: 216deg;
-  --app-primary-s: 49%;
-  --app-primary-l: 22%;
+  --app-primary-hex: #F00699;
+  --app-primary-rgb: 240, 6, 153;
+  --app-primary-h: 322deg;
+  --app-primary-s: 95%;
+  --app-primary-l: 48%;
 
   --app-secondary: hsla(var(--app-secondary-h), var(--app-secondary-s), var(--app-secondary-l), 1);
   --app-secondary-base: hsla(var(--app-secondary-h), var(--app-secondary-s), var(--app-secondary-l), 1);
-  --app-secondary-rgb: 247, 208, 2;
-  --app-secondary-h: 50deg;
-  --app-secondary-s: 98%;
-  --app-secondary-l: 49%;
+  --app-secondary-hex: #00F0B5;
+  --app-secondary-rgb: 0, 240, 181;
+  --app-secondary-h: 165deg;
+  --app-secondary-s: 100%;
+  --app-secondary-l: 47%;
   --app-secondary-dark: hsla(var(--app-secondary-h), var(--app-secondary-s), 44%), 1);
 
   --app-link: hsla(var(--app-link-h), var(--app-link-s), var(--app-link-l), 1);
   --app-link-base: hsla(var(--app-link-h), var(--app-link-s), var(--app-link-l), 1);
-  --app-link-rgb: 240, 6, 153;
-  --app-link-h: 322deg;
-  --app-link-s: 95%;
-  --app-link-l: 48%;
+  --app-link-hex: #5E239D;
+  --app-link-rgb: 94, 35, 157;
+  --app-link-h: 269deg;
+  --app-link-s: 64%;
+  --app-link-l: 38%;
 
   --app-info: hsla(var(--app-info-h), var(--app-info-s), var(--app-info-l), 1);
   --app-info-base: hsla(var(--app-info-h), var(--app-info-s), var(--app-info-l), 1);
-  --app-info-rgb: 70, 117, 153;
-  --app-info-h: 206deg;
-  --app-info-s: 34%;
-  --app-info-l: 44%;
+  --app-info-hex: #9ED8DB;
+  --app-info-rgb: 158, 216, 219;
+  --app-info-h: 183deg;
+  --app-info-s: 46%;
+  --app-info-l: 74%;
 
   --app-success: hsla(var(--app-success-h), var(--app-success-s), var(--app-success-l), 1);
   --app-success-base: hsla(var(--app-success-h), var(--app-success-s), var(--app-success-l), 1);
+  --app-success-hex: #018E42;
   --app-success-rgb: 1, 142, 66;
   --app-success-h: 148deg;
   --app-success-s: 99%;
@@ -39,6 +44,7 @@
 
   --app-warning: hsla(var(--app-warning-h), var(--app-warning-s), var(--app-warning-l), 1);
   --app-warning-base: hsla(var(--app-warning-h), var(--app-warning-s), var(--app-warning-l), 1);
+  --app-warning-hex: #F7D002;
   --app-warning-rgb: 247, 208, 2;
   --app-warning-h: 50deg;
   --app-warning-s: 98%;
@@ -46,6 +52,7 @@
 
   --app-danger: hsla(var(--app-danger-h), var(--app-danger-s), var(--app-danger-l), 1);
   --app-danger-base: hsla(var(--app-danger-h), var(--app-danger-s), var(--app-danger-l), 1);
+  --app-danger-hex: #BF1A2F;
   --app-danger-rgb: 191, 26, 47;
   --app-danger-h: 352deg;
   --app-danger-s: 76%;
@@ -58,7 +65,15 @@
   --app-primary-20-l: 21%;
   --app-primary-35-l: 35%;
   --app-primary-60-l: 60%;
-  /*app */
+
+  /* shadows */
+  --app-shadow: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-shadow-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-shadow-hex: #163354;
+  --app-shadow-rgb: 22, 51, 84;
+  --app-shadow-h: 212deg;
+  --app-shadow-s: 58%;
+  --app-shadow-l: 21%;
 
   /* Typography */
   --app-family-primary: Crimson Text, Rubik, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -115,49 +130,49 @@ html {
 
 .app-text-oblique-shadow {
   text-shadow:
-    var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-20) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-30) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-50) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-55) rgba(var(--app-primary-rgb), 1);
+    var(--app-oblique-shadow-00) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-10) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-50) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-small {
   text-shadow:
-    var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-20) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-30) rgba(var(--app-primary-rgb), 1);
+    var(--app-oblique-shadow-00) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-10) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-medium {
   text-shadow:
-    var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-20) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-30) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-50) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-55) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-60) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-65) rgba(var(--app-primary-rgb), 1);
+    var(--app-oblique-shadow-00) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-10) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-50) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-60) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-65) rgba(var(--app-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-big {
   text-shadow:
-    var(--app-oblique-shadow-00) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-10) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-20) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-30) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-50) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-55) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-60) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-65) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-70) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-75) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-80) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-85) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-90) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-95) rgba(var(--app-primary-rgb), 1),
-    var(--app-oblique-shadow-99) rgba(var(--app-primary-rgb), 1);
+    var(--app-oblique-shadow-00) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-10) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-50) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-60) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-65) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-70) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-75) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-80) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-85) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-90) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-95) rgba(var(--app-shadow-rgb), 1),
+    var(--app-oblique-shadow-99) rgba(var(--app-shadow-rgb), 1);
 }
