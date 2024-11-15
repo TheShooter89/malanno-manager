@@ -75,6 +75,22 @@
   --app-shadow-s: 58%;
   --app-shadow-l: 21%;
 
+  --app-contrast-shadow: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-hex: #3C424A;
+  --app-contrast-shadow-rgb: 60, 66, 74;
+  --app-contrast-shadow-h: 214deg;
+  --app-contrast-shadow-s: 10%;
+  --app-contrast-shadow-l: 26%;
+
+  --app-contrast-shadow-bright: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-bright-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-bright-hex: #D8D8D8;
+  --app-contrast-shadow-bright-rgb: 216, 216, 216;
+  --app-contrast-shadow-bright-h: 0deg;
+  --app-contrast-shadow-bright-s: 0%;
+  --app-contrast-shadow-bright-l: 85%;
+
   /* Typography */
   --app-family-primary: Crimson Text, Rubik, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
   --app-family-secondary: Crimson Text, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -86,6 +102,10 @@
   /* --app-size-medium: 1.25rem; */
   /* --app-size-large: 1.5rem; */
   /* etc. */
+
+  --app-contrast-shadow-depth: 0 0 20px;
+  --app-contrast-shadow-depth-light: 0 0 50px;
+  --app-contrast-shadow-depth-heavy: 0 0 10px;
 
   --app-oblique-shadow-00: 1px 0 0px;
   --app-oblique-shadow-10: 1px 2px 0px;
@@ -135,7 +155,9 @@ html {
     var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-50) rgba(var(--app-shadow-rgb), 1),
-    var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1);
+    var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1),
+    /*contrast shadow*/
+    var(--app-contrast-shadow-depth) rgba(var(--app-contrast-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-small {
@@ -143,7 +165,9 @@ html {
     var(--app-oblique-shadow-00) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-10) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-20) rgba(var(--app-shadow-rgb), 1),
-    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1);
+    var(--app-oblique-shadow-30) rgba(var(--app-shadow-rgb), 1),
+    /*contrast shadow*/
+    var(--app-contrast-shadow-depth) rgba(var(--app-contrast-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-medium {
@@ -155,7 +179,9 @@ html {
     var(--app-oblique-shadow-50) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-55) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-60) rgba(var(--app-shadow-rgb), 1),
-    var(--app-oblique-shadow-65) rgba(var(--app-shadow-rgb), 1);
+    var(--app-oblique-shadow-65) rgba(var(--app-shadow-rgb), 1),
+    /*contrast shadow*/
+    var(--app-contrast-shadow-depth) rgba(var(--app-contrast-shadow-rgb), 1);
 }
 
 .app-text-oblique-shadow-big {
@@ -174,5 +200,7 @@ html {
     var(--app-oblique-shadow-85) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-90) rgba(var(--app-shadow-rgb), 1),
     var(--app-oblique-shadow-95) rgba(var(--app-shadow-rgb), 1),
-    var(--app-oblique-shadow-99) rgba(var(--app-shadow-rgb), 1);
+    var(--app-oblique-shadow-99) rgba(var(--app-shadow-rgb), 1),
+    /*contrast shadow*/
+    var(--app-contrast-shadow-depth) rgba(var(--app-contrast-shadow-rgb), 1);
 }
