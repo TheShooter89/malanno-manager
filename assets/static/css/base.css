@@ -77,19 +77,19 @@
 
   --app-contrast-shadow: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
   --app-contrast-shadow-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
-  --app-contrast-shadow-hex: #3C424A;
-  --app-contrast-shadow-rgb: 60, 66, 74;
-  --app-contrast-shadow-h: 214deg;
-  --app-contrast-shadow-s: 10%;
-  --app-contrast-shadow-l: 26%;
+  --app-contrast-shadow-hex: #D8D8D8;
+  --app-contrast-shadow-rgb: 216, 216, 216;
+  --app-contrast-shadow-h: 0deg;
+  --app-contrast-shadow-s: 0%;
+  --app-contrast-shadow-l: 85%;
 
-  --app-contrast-shadow-bright: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
-  --app-contrast-shadow-bright-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
-  --app-contrast-shadow-bright-hex: #D8D8D8;
-  --app-contrast-shadow-bright-rgb: 216, 216, 216;
-  --app-contrast-shadow-bright-h: 0deg;
-  --app-contrast-shadow-bright-s: 0%;
-  --app-contrast-shadow-bright-l: 85%;
+  --app-contrast-shadow-dark: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-dark-base: hsla(var(--app-shadow-h), var(--app-shadow-s), var(--app-shadow-l), 1);
+  --app-contrast-shadow-dark-hex: #3C424A;
+  --app-contrast-shadow-dark-rgb: 60, 66, 74;
+  --app-contrast-shadow-dark-h: 214deg;
+  --app-contrast-shadow-dark-s: 10%;
+  --app-contrast-shadow-dark-l: 26%;
 
   /* Typography */
   --app-family-primary: Crimson Text, Rubik, Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
